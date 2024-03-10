@@ -1,3 +1,5 @@
+package variable;
+
 public class variable {
     public static void main(String [] Args){
         int a=10;

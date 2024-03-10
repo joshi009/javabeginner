@@ -1,3 +1,5 @@
+package variable;
+
 import java.util.Scanner;
 
 public class Typecasting {

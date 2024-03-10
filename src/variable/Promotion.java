@@ -1,3 +1,4 @@
+package  variable;
 public class Promotion {
     public static void main(String args[] ) {
         char a = 'a';

@@ -1,3 +1,5 @@
+package variable;
+
 public class Promotion1 {
     public static void main(String args[] ){
 //        short  a = 5;
