@@ -14,10 +14,12 @@ public class Add_First {
 
     public static Add_First head;
     public static Add_First tail;
+    public static int size;
 
     public void addFirst(int data) {
         //step1 =create new Node
         Add_First newNode = new Add_First(data);
+        size++;
         if(head == null){
             head = tail = newNode;
             return;
@@ -35,6 +37,7 @@ public class Add_First {
         LinkedList ll = new LinkedList();
         ll.addFirst(1);
         ll.addFirst(2);
+        System.out.println(ll.size());
 
     }
 }
