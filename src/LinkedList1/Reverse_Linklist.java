@@ -62,7 +62,7 @@ public class Reverse_Linklist {
 
 
 
-    public void reverse(){
+    public void reverse(){ //O(n)
         Node6 prev = null;
         Node6 curr  = head;
         Node6 next;
