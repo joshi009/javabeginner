@@ -62,9 +62,9 @@ public class   Linklist_Palindrome {
 
 
 //slow-fast Approach
-     public Node findMid(Node head){
-        Node slow = head;
-        Node fast = head;
+     public Node8 findMid(Node8 head){
+        Node8 slow = head;
+        Node8 fast = head;
 
         while(fast != null && fast.next != null){
             slow = slow.next;  //+1
@@ -73,17 +73,47 @@ public class   Linklist_Palindrome {
         return slow;   //slow is midNode
      }
 
+     public boolean checkPalindrome(){
+        if(head == null || head.next == null){
+            return true;
+        }
+        //step1 - find mid
+         Node8 midNode = findMid(head);
+
+        //step2 - reverse 2nd half
+         Node8 prev = null;
+         Node8 curr = midNode;
+         Node8 next;
+         while (curr != null){
+             next = curr.next;
+             curr.next = prev;
+             prev = curr;
+             curr = next;
+         }
+         Node8 right = prev;  //right half head
+         Node8 left = head;
+
+         //step3 - check left half and right half
+         while (right  != null){
+             if(left.data != right.data){
+                 return false;
+             }
+             left = left.next;
+             right = right.next;
+         }
+         return true;
+     }
+
     public static void main(String[] args) {
-        Find_Remove_Nth_Node ll = new Find_Remove_Nth_Node();
-        ll.addFirst(2);
-        ll.addFirst(1);
-        ll.addLast(4);
-        ll.addLast(5);
-        ll.add(2, 3); // Add 3 at index 2
+         Linklist_Palindrome ll = new Linklist_Palindrome();
+        ll.addLast(1);
+        ll.addLast(2);
+        ll.addLast(2);
+//        ll.addLast(1);
+//        ll.add(2, 3); // Add 3 at index 2
 
         ll.print(); // Expected output: 1 -> 2 -> 3 -> 4 -> 5 -> null
-        ll.delethNthfromEnd(3);
-        ll.print();
+        System.out.println(ll.checkPalindrome());
 
 
     }
