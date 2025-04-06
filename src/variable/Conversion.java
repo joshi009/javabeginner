@@ -9,6 +9,11 @@ public class Conversion {
         int b = 'a';
         System.out.println(a);
         System.out.println(b);
+        char ch='S';
+        if(ch>='a' && ch<='z')
+        {
+            System.out.println("ggjg");
+        }
 
 //        Scanner sc = new Scanner(System.in);
 ////        int number = sc.nextFloat();
