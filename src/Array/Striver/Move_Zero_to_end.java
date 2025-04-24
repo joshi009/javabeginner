@@ -8,7 +8,7 @@ public class Move_Zero_to_end {
             //from original -> temp array:
             for (int i = 0; i < n; i++) {
                 if (a[i] != 0)
-                    temp.add(a[i]);
+                      temp.add(a[i]);
             }
 
             // number of non-zero elements.
