@@ -1,6 +1,7 @@
 package Array.Striver;
 import java.util.*;
 public class Move_Zero_to_end {
+    // Brute force approach
         public static int[] moveZeros(int n, int []a) {
             //temporary array:
             ArrayList<Integer> temp = new ArrayList<>();
