@@ -37,5 +37,5 @@ public class Movezerotoend {
             }
             System.out.println("");
         }
-    }
+}
 
