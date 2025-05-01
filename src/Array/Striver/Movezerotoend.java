@@ -1,6 +1,6 @@
 package Array.Striver;
 import java.util.*;
-public class Movezerotoend {
+public class Movezerotoend{
         public static int[] moveZeros(int n, int []a) {
             int j = -1;
             //place the pointer j:
