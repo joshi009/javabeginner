@@ -19,6 +19,7 @@ public class MaxSubarray {
                     maxSum = currSum;
                 }
             }
+            System.out.println();
         }
         System.out.println("max sum = " +maxSum);
 
