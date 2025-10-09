@@ -1,8 +1,13 @@
 package Mst;
 
+import java.util.Scanner;
+
 public class Fibonacci {
     public static void main(String[] args) {
-        int n = 10;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number of terms :");
+        int n = sc.nextInt();
+//        int n = 10;
         int a = 0;
         int b = 1;
         System.out.print(a + " ");
